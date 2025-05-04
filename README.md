@@ -1,6 +1,5 @@
 # DeepTabNet
 ## Project Overview
-# DeepTabNet
 Summary :
 1. Table Detection with YOLOv8
 Dataset Preparation
@@ -43,7 +42,7 @@ To ensure robustness, we rigorously tested our pipeline on diverse and challengi
 Developed a Python utility to transform validated JSON into CSV, handling edge cases like empty cells or multi-line text.
 
 ## Design Rationale and Techniques Used
-## Results and Evaluation
+
 
 🎯 Design Rationale
 
@@ -98,4 +97,4 @@ create_csv() – converts structured data into a CSV
 save_cropped_table_image() – crops and saves images of detected tables
 encode_image() – base64-encodes images for LLM input
 
-
+## Results and Evaluation
