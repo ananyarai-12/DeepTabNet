@@ -1,5 +1,5 @@
 # DeepTabNet
-## Flowchart
+## Architechtural Diagram
 ![Image](https://github.com/user-attachments/assets/140f2e1f-8758-49db-941c-4db8e19c829c)
 ## Project Overview
 
