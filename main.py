@@ -36,5 +36,5 @@ def main(base="input"):
     return opt
 
 if __name__ == "__main__":
-    base = "test_evaluation"
+    base = "test_1"
     main(base)
