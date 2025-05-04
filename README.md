@@ -1,6 +1,7 @@
 # DeepTabNet
 ## Architechtural Diagram
 ![Image](https://github.com/user-attachments/assets/140f2e1f-8758-49db-941c-4db8e19c829c)
+![Image](https://github.com/user-attachments/assets/a20c9963-3779-49fb-a13b-914fb199f52f)
 ## Project Overview
 
 1. Table Detection with YOLOv8
