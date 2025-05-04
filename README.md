@@ -1,6 +1,7 @@
 # DeepTabNet
-## Results and Evaluation
-### Design Rationale and Techniques Used
+## Project Overview
+### Results and Evaluation
+#### Design Rationale and Techniques Used
 🎯 Design Rationale
 
 The design is modular and separates concerns into three key stages:
