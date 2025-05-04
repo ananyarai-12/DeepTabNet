@@ -1,7 +1,8 @@
 # DeepTabNet
 ## Results and Evaluation
-### Table Detection using YoloV8
+### Design Rationale and Techniques Used
 🎯 Design Rationale
+
 The design is modular and separates concerns into three key stages:
 
 Document Preprocessing
