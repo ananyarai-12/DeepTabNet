@@ -1,6 +1,6 @@
 # DeepTabNet
 ## Flowchart
-![Image](https://github.com/user-attachments/assets/79e07964-1934-43f3-8003-299de3f506a4)
+![Image](https://github.com/user-attachments/assets/140f2e1f-8758-49db-941c-4db8e19c829c)
 ## Project Overview
 
 1. Table Detection with YOLOv8
