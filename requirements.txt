@@ -1,0 +1,8 @@
+pandas
+numpy
+opencv-python
+Pillow
+paddleocr
+ultralytics
+PyMuPDF
+together
