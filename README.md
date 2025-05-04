@@ -87,3 +87,11 @@ save_cropped_table_image() – crops and saves images of detected tables
 encode_image() – base64-encodes images for LLM input
 
 ## Results and Evaluation
+![Image](https://github.com/user-attachments/assets/ffb3b29d-c626-45c9-8414-7107922ae179)
+![Image](https://github.com/user-attachments/assets/b191c93d-bde0-4741-bdf2-48de7dd43eaf)
+![Image](https://github.com/user-attachments/assets/6e378582-937b-4ae8-bbd1-bf1105dadaa7)
+#### Evaluation
+![Image](https://github.com/user-attachments/assets/9b1b97f4-4611-401b-b765-560780bdac4e)
+![Image](https://github.com/user-attachments/assets/5137934d-d383-43b4-ba93-c4e3827dbbe2)
+![Image](https://github.com/user-attachments/assets/549a3ded-fcbf-47db-b344-343effbde3ba)
+![Image](https://github.com/user-attachments/assets/f269df49-3e33-48a2-ba12-4fcfa1fed172)
