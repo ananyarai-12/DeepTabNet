@@ -1,44 +1,33 @@
 # DeepTabNet
 ## Project Overview
-Summary :
+
 1. Table Detection with YOLOv8
-Dataset Preparation
+  Dataset Preparation
+   >Curated a subset of the PubLayNet dataset, filtering for table structures across diverse document types (scanned PDFs,digital reports).
+   >Annotated tables with high-precision bounding boxes, including edge cases like rotated tables, nested layouts, and low-resolution scans.
 
-Curated a subset of the PubLayNet dataset, filtering for table structures across diverse document types (scanned PDFs,digital reports).
+  Model Training
+  >Fine-tuned YOLOv8m (medium variant) using transfer learning, optimizing anchor boxes for common table aspect ratios.
+  >Augmented training data with affine transformations (rotation, scaling, shear) to improve robustness.
 
-Annotated tables with high-precision bounding boxes, including edge cases like rotated tables, nested layouts, and low-resolution scans.
-
-Model Training
-
-Fine-tuned YOLOv8m (medium variant) using transfer learning, optimizing anchor boxes for common table aspect ratios.
-
-Augmented training data with affine transformations (rotation, scaling, shear) to improve robustness.
-
-Performance
-
-Achieved 98.98% precision, 99.10% recall, and 99.3 mAP50 on a held-out test set, with consistent performance across document domains.
+  Performance
+  >Achieved 98.98% precision, 99.10% recall, and 99.3 mAP50 on a held-out test set, with consistent performance across document domains.
 
 2. Cell-Level OCR Extraction with PaddleOCR
-Preprocessing
-
-Cropped document regions using YOLOv8’s table bounding boxes.
-Cell Detection & Text Recognition
-
-Leveraged PaddleOCR’s layout analysis module to segment individual cells within each table, generating coordinates for all four cell boundaries.
+  Preprocessing
+    >Cropped document regions using YOLOv8’s table bounding boxes.
+    >Cell Detection & Text Recognition
+    >Leveraged PaddleOCR’s layout analysis module to segment individual cells within each table, generating coordinates for all four cell boundaries.
 
 3. Structured Reconstruction with Llama 4 Scout
-Spatial-Aware Table Parsing
-
-Designed a coordinate-based prompt for Llama 4 Scout, instructing the model to:
-
-Infer row/column alignment using cell bounding box positions.
-
-Identify headers by analyzing text patterns (e.g., bolded cells, positional consistency).
-
-Output data in a JSON schema mirroring the table’s logical structure.
+    >Spatial-Aware Table Parsing
+    >Designed a coordinate-based prompt for Llama 4 Scout, instructing the model to:
+      >Infer row/column alignment using cell bounding box positions.
+      >Identify headers by analyzing text patterns (e.g., bolded cells, positional consistency).
+      >Output data in a JSON schema mirroring the table’s logical structure.
 
 Validation & Conversion.
-To ensure robustness, we rigorously tested our pipeline on diverse and challenging datasets and we are getting good accuracy results.
+To ensure robustness, we rigorously tested our pipeline on diverse and challenging datasets and we are getting accurate results.
 Developed a Python utility to transform validated JSON into CSV, handling edge cases like empty cells or multi-line text.
 
 ## Design Rationale and Techniques Used
