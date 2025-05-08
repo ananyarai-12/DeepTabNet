@@ -19,7 +19,7 @@
 2. Cell-Level OCR Extraction with PaddleOCR
   Preprocessing
     >Cropped document regions using YOLOv8’s table bounding boxes.
-    >Cell Detection & Text Recognition
+    >Cell Detection & Text Recognition.
     >Leveraged PaddleOCR’s layout analysis module to segment individual cells within each table, generating coordinates for all four cell boundaries.
 
 3. Structured Reconstruction with Llama 4 Scout
